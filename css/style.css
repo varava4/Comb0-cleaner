@@ -315,8 +315,8 @@ h6 {
 .loaded .first-screen__animation {
   bottom: 0;
   opacity: 1;
-  -webkit-animation: animation .8s forwards 7.2s;
-  animation: animation .8s forwards 7.2s
+  animation: laptop .8s forwards 7.2s;
+  -webkit-animation: laptop .8s forwards 7.2s
 }
 @-webkit-keyframes animation {
   100% {
