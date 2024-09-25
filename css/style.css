@@ -307,14 +307,14 @@ h6 {
 }
 .first-screen__animation {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   bottom: -200%;
-  opacity: 0
+  opacity: 0;
+  transition: all .6s ease 0s
 }
 .loaded .first-screen__animation {
   bottom: 0;
   opacity: 1;
-  transition: all .6s ease 0s;
   -webkit-animation: animation .8s forwards 7.2s;
   animation: animation .8s forwards 7.2s
 }
