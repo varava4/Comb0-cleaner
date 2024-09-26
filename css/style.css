@@ -293,20 +293,20 @@ h6 {
 .first-screen__item-left:nth-child(1) {
   top: 20%;
   left: 22%;
-  -webkit-animation: view 1s forwards .5s;
-  animation: view 1s forwards .5s
+  -webkit-animation: view 1s forwards 1.5s;
+  animation: view 1s forwards 1.5s
 }
 .first-screen__item-left:nth-child(2) {
   top: 29%;
   right: -12%;
-  -webkit-animation: view 1s forwards 3.5s;
-  animation: view 1s forwards 3.5s
+  -webkit-animation: view 1s forwards 4.5s;
+  animation: view 1s forwards 4.5s
 }
 .first-screen__item-left:nth-child(3) {
   top: 41%;
   left: 6%;
-  -webkit-animation: view 1s forwards 6.5s;
-  animation: view 1s forwards 6.5s
+  -webkit-animation: view 1s forwards 7.5s;
+  animation: view 1s forwards 7.5s
 }
 .first-screen__item-right {
   position: absolute;
@@ -319,14 +319,14 @@ h6 {
 .first-screen__item-right:nth-child(1) {
   top: 21%;
   left: 0;
-  -webkit-animation: view 1s forwards 2s;
-  animation: view 1s forwards 2s
+  -webkit-animation: view 1s forwards 3s;
+  animation: view 1s forwards 3s
 }
 .first-screen__item-right:nth-child(2) {
   top: 38%;
   right: 12%;
-  -webkit-animation: view 1s forwards 5s;
-  animation: view 1s forwards 5s
+  -webkit-animation: view 1s forwards 6s;
+  animation: view 1s forwards 6s
 }
 .first-screen__animation {
   position: relative;
@@ -367,8 +367,8 @@ h6 {
   width: 4%;
   background-color: #1f8ffe;
   border-radius: 1.5625rem;
-  -webkit-animation: simulated 9s ease-in-out forwards .6s;
-  animation: simulated 9s ease-in-out forwards .6s
+  -webkit-animation: simulated 10s ease-in-out forwards .6s;
+  animation: simulated 10s ease-in-out forwards .6s
 }
 @-webkit-keyframes simulated {
   0% {
