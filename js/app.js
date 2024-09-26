@@ -133,7 +133,9 @@
                 digitsCounter.setAttribute("data-go", "");
                 digitsCounter.dataset.digitsCounter = digitsCounter.innerHTML;
                 digitsCounter.innerHTML = `0`;
-                digitsCountersAnimate(digitsCounter);
+                setTimeout((() => {
+                    digitsCountersAnimate(digitsCounter);
+                }), 1500);
             }));
         }
         function digitsCountersAnimate(digitsCounter) {
