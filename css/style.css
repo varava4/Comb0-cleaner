@@ -189,6 +189,7 @@ h6 {
 }
 .first-screen__items-left {
   position: relative;
+  z-index: 2;
   -webkit-animation: items-left .8s forwards 6.8s;
   animation: items-left .8s forwards 6.8s
 }
@@ -208,6 +209,7 @@ h6 {
 }
 .first-screen__items-right {
   position: relative;
+  z-index: 2;
   -webkit-animation: items-right .8s forwards 7s;
   animation: items-right .8s forwards 7s
 }
@@ -307,25 +309,27 @@ h6 {
 }
 .first-screen__animation {
   position: relative;
-  z-index: -1;
-  bottom: -200%;
+  z-index: 1;
+  -webkit-transform: scale(2);
+  transform: scale(2);
   opacity: 0;
   transition: all .6s ease 0s
 }
 .loaded .first-screen__animation {
-  bottom: 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
   opacity: 1;
-  animation: laptop .8s forwards 7.2s;
-  -webkit-animation: laptop .8s forwards 7.2s
+  -webkit-animation: laptop .8s forwards 7s;
+  animation: laptop .8s forwards 7s
 }
-@-webkit-keyframes animation {
+@-webkit-keyframes laptop {
   100% {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0)
   }
 }
-@keyframes animation {
+@keyframes laptop {
   100% {
     opacity: 0;
     -webkit-transform: scale(0);
@@ -416,59 +420,39 @@ h6 {
   border-radius: 1rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  -webkit-transform: translateY(200%);
-  transform: translateY(200%);
+  -webkit-transform: translate(-50%,100%);
+  transform: translate(-50%,100%);
   opacity: 0
 }
 @-webkit-keyframes items {
-  0% {
-    -webkit-transform: translateY(1000%);
-    transform: translateY(1000%);
-    opacity: 1
-  }
-  75% {
-    -webkit-transform: translateY(-10%);
-    transform: translateY(-10%);
-    opacity: 1
-  }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
     opacity: 1
   }
 }
 @keyframes items {
-  0% {
-    -webkit-transform: translateY(1000%);
-    transform: translateY(1000%);
-    opacity: 1
-  }
-  75% {
-    -webkit-transform: translateY(-10%);
-    transform: translateY(-10%);
-    opacity: 1
-  }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
     opacity: 1
   }
 }
 .first-screen__card:nth-child(1) {
-  -webkit-animation: items .5s forwards 2s;
-  animation: items .5s forwards 2s
+  -webkit-animation: items .5s forwards .2s;
+  animation: items .5s forwards .2s
 }
 .first-screen__card:nth-child(2) {
-  -webkit-animation: items .5s forwards 2.3s;
-  animation: items .5s forwards 2.3s
+  -webkit-animation: items .5s forwards .3s;
+  animation: items .5s forwards .3s
 }
 .first-screen__card:nth-child(3) {
-  -webkit-animation: items .5s forwards 2.6s;
-  animation: items .5s forwards 2.6s
+  -webkit-animation: items .5s forwards .4s;
+  animation: items .5s forwards .4s
 }
 .first-screen__card:nth-child(4) {
-  -webkit-animation: items .5s forwards 2.9s;
-  animation: items .5s forwards 2.9s
+  -webkit-animation: items .5s forwards .5s;
+  animation: items .5s forwards .5s
 }
 .first-screen__card-counter {
   font-weight: 700;
@@ -635,8 +619,8 @@ h6 {
   top: 0;
   left: -80px;
   transition: all .5s;
-  -webkit-animation: button .8s forwards 2.5s;
-  animation: button .8s forwards 2.5s;
+  -webkit-animation: button .5s forwards 2.5s;
+  animation: button .5s forwards 2.5s;
   color: #fff!important;
   -webkit-transform: scale(1.05) skewX(-45deg);
   transform: scale(1.05) skewX(-45deg)
@@ -779,6 +763,9 @@ h6 {
   .page__second-screen {
     padding-bottom: 6.75rem
   }
+  .first-screen__animation {
+    margin-bottom: 3.75rem
+  }
   .first-screen__simulated {
     height: 1.875rem
   }
@@ -880,6 +867,9 @@ h6 {
   .page__second-screen {
     padding-bottom: 3.1875rem
   }
+  .first-screen__animation {
+    margin-bottom: 1.125rem
+  }
   .first-screen__simulated {
     height: 1.25rem
   }
@@ -971,22 +961,6 @@ h6 {
   .first-screen__cards {
     grid-template-columns: repeat(1,1fr)
   }
-  .first-screen__card:nth-child(1) {
-    -webkit-animation: items .5s forwards 1s;
-    animation: items .5s forwards 1s
-  }
-  .first-screen__card:nth-child(2) {
-    -webkit-animation: items .5s forwards 1.5s;
-    animation: items .5s forwards 1.5s
-  }
-  .first-screen__card:nth-child(3) {
-    -webkit-animation: items .5s forwards 2s;
-    animation: items .5s forwards 2s
-  }
-  .first-screen__card:nth-child(4) {
-    -webkit-animation: items .5s forwards 2.5s;
-    animation: items .5s forwards 2.5s
-  }
   .second-screen__cards {
     width: 100%;
     grid-template-columns: repeat(1,1fr);
@@ -1029,6 +1003,9 @@ h6 {
   }
   .page__second-screen {
     padding-bottom: clamp(3.1875rem ,2.3367537313rem + 4.2537313433vw ,6.75rem)
+  }
+  .first-screen__animation {
+    margin-bottom: clamp(1.125rem ,.4981343284rem + 3.1343283582vw ,3.75rem)
   }
   .first-screen__simulated {
     height: clamp(1.25rem ,1.1007462687rem + .7462686567vw ,1.875rem)
