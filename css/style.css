@@ -205,7 +205,8 @@ h6 {
 }
 .first-screen__body {
   display: grid;
-  grid-template-columns: 27.8% auto 27.8%
+  grid-template-columns: 27.8% auto 27.8%;
+  margin-bottom: 4.375rem
 }
 .first-screen__items-left {
   position: relative;
@@ -750,9 +751,6 @@ h6 {
   .page__second-screen {
     padding-bottom: 6.75rem
   }
-  .first-screen__body {
-    margin-bottom: 4.375rem
-  }
   .first-screen__animation {
     margin-bottom: 3.75rem
   }
@@ -862,9 +860,6 @@ h6 {
   }
   .page__second-screen {
     padding-bottom: 3.1875rem
-  }
-  .first-screen__body {
-    margin-bottom: 4.375rem
   }
   .first-screen__animation {
     margin-bottom: 1.125rem
@@ -1008,9 +1003,6 @@ h6 {
   }
   .page__second-screen {
     padding-bottom: clamp(3.1875rem ,2.3367537313rem + 4.2537313433vw ,6.75rem)
-  }
-  .first-screen__body {
-    margin-bottom: clamp(4.375rem ,4.375rem + 0 ,4.375rem)
   }
   .first-screen__animation {
     margin-bottom: clamp(1.125rem ,.4981343284rem + 3.1343283582vw ,3.75rem)
