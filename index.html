@@ -10,8 +10,14 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240926094740">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240926152143">
 	<link rel="shortcut icon" href="favicon.ico">
+	<script src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@v1.3.0/dist/dotlottie-player.js?_v=20240926152143"></script>
+	<link rel="alternate" type="application/json+oembed" href="https://embed.lottiefiles.com/oembed?url=https://lottie.host/embed/131df8ca-e5e4-404a-a8e0-59bd3aec5ff9/tCyMtEhplM.json" />
+	<link rel="icon" type="image.webp" sizes="192x192" href="https://lottie.host/favicons/android-icon-192x192.webp" />
+	<link rel="icon" type="image.webp" sizes="32x32" href="https://lottie.host/favicons/favicon-32x32.webp" />
+	<link rel="icon" type="image.webp" sizes="96x96" href="https://lottie.host/favicons/favicon-96x96.webp" />
+	<link rel="icon" type="image.webp" sizes="16x16" href="https://lottie.host/favicons/favicon-16x16.webp" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -40,24 +46,26 @@
 				<div class="first-screen__container">
 					<div class="first-screen__body">
 						<div class="first-screen__items-left">
-							<div class="first-screen__item-left"><img src="img/antivirus.webp" alt="Antivirus"></div>
-							<div class="first-screen__item-left"><img src="img/pc.webp" alt="PC"></div>
-							<div class="first-screen__item-left"><img src="img/protection.webp" alt="Protection"></div>
+							<div class="first-screen__item-left"><img src="img/antivirus.svg" alt="Antivirus"></div>
+							<div class="first-screen__item-left"><img src="img/pc.svg" alt="PC"></div>
+							<div class="first-screen__item-left"><img src="img/protection.svg" alt="Protection"></div>
 						</div>
 						<div class="first-screen__animation">
-							<video muted autoplay loop playsinline class="first-screen__video">
-								<source src="img/animation.mp4" type="video/mp4">
-								<source src="img/animation.ogv" type="video/ogg">
-								<source src="img/animation.webm" type="video/webm">
-							</video>
+							<dotlottie-player src="https://lottie.host/131df8ca-e5e4-404a-a8e0-59bd3aec5ff9/tCyMtEhplM.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+							<!-- <iframe src="https://lottie.host/embed/131df8ca-e5e4-404a-a8e0-59bd3aec5ff9/tCyMtEhplM.json"></iframe> -->
+							<!-- <video muted autoplay loop playsinline class="first-screen__video">
+									<source src="img/animation.mp4" type="video/mp4">
+									<source src="img/animation.ogv" type="video/ogg">
+									<source src="img/animation.webm" type="video/webm">
+								</video> -->
 							<div class="first-screen__simuleted-box">
 								<div class="first-screen__simulated"><span></span></div>
-								<h1 class="first-screen__title">Simulated PC Scan</h1>
+								<h1 data-watch class="first-screen__title">Simulated PC Scan - <span data-digits-counter data-digits-counter-speed="8500">100</span>%</h1>
 							</div>
 						</div>
 						<div class="first-screen__items-right">
-							<div class="first-screen__item-right"><img src="img/spyware.webp" alt="Spyware"></div>
-							<div class="first-screen__item-right"><img src="img/virus-detected.webp" alt="Virus-detected"></div>
+							<div class="first-screen__item-right"><img src="img/spyware.svg" alt="Spyware"></div>
+							<div class="first-screen__item-right"><img src="img/virus-detected.svg" alt="Virus-detected"></div>
 						</div>
 					</div>
 					<div class="first-screen__cards">
@@ -123,7 +131,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240926094740"></script>
+	<script src="js/app.min.js?_v=20240926152143"></script>
 </body>
 
 </html>
