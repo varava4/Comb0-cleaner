@@ -320,7 +320,8 @@ h6 {
   transform: scale(1);
   opacity: 1;
   -webkit-animation: laptop .8s forwards 7s;
-  animation: laptop .8s forwards 7s
+  animation: laptop .8s forwards 7s;
+  -moz-animation: laptop .8s forwards 7s
 }
 @-webkit-keyframes laptop {
   100% {
