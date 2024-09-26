@@ -169,7 +169,7 @@
     setTimeout((function() {
         document.getElementById("first-screen").style.display = "none";
         document.getElementById("second-screen").style.display = "block";
-    }), 8e3);
+    }), 7200);
     window["FLS"] = true;
     addLoadedClass();
     digitsCounter();
