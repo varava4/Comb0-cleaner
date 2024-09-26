@@ -367,8 +367,8 @@ h6 {
   width: 4%;
   background-color: #1f8ffe;
   border-radius: 1.5625rem;
-  -webkit-animation: simulated 8s ease-in-out forwards .6s;
-  animation: simulated 8s ease-in-out forwards .6s
+  -webkit-animation: simulated 9s ease-in-out forwards .6s;
+  animation: simulated 9s ease-in-out forwards .6s
 }
 @-webkit-keyframes simulated {
   0% {
