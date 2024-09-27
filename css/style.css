@@ -173,12 +173,19 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: .9375rem
-}
-.footer__copy {
-  text-align: center;
+  flex-wrap: wrap;
+  -webkit-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+  row-gap: .625rem;
   color: #fff;
   line-height: 143%
+}
+.footer__body {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+  flex-wrap: nowrap
 }
 .page {
   position: relative
@@ -739,6 +746,12 @@ h6 {
   .footer {
     padding-bottom: .875rem
   }
+  .footer__container {
+    font-size: .875rem
+  }
+  .footer__logo {
+    margin-right: 1.875rem
+  }
   .footer__logo {
     margin-left: 1.875rem
   }
@@ -855,11 +868,17 @@ h6 {
   .footer {
     padding-bottom: .5625rem
   }
+  .footer__container {
+    font-size: .75rem
+  }
+  .footer__logo {
+    margin-right: .9375rem
+  }
   .footer__logo {
     width: 1.4375rem
   }
   .footer__copy {
-    font-size: .75rem
+    font-size: .6875rem
   }
   .page::before {
     height: 15.625rem
@@ -998,11 +1017,17 @@ h6 {
   .footer {
     padding-bottom: clamp(.5625rem ,.4878731343rem + .3731343284vw ,.875rem)
   }
+  .footer__container {
+    font-size: clamp(.75rem ,.7201492537rem + .1492537313vw ,.875rem)
+  }
+  .footer__logo {
+    margin-right: clamp(.9375rem ,.713619403rem + 1.1194029851vw ,1.875rem)
+  }
   .footer__logo {
     width: clamp(1.4375rem ,1.3180970149rem + .5970149254vw ,1.9375rem)
   }
   .footer__copy {
-    font-size: clamp(.75rem ,.7201492537rem + .1492537313vw ,.875rem)
+    font-size: clamp(.6875rem ,.6427238806rem + .223880597vw ,.875rem)
   }
   .page::before {
     height: clamp(15.625rem ,13.3861940299rem + 11.1940298507vw ,25rem)
@@ -1101,6 +1126,9 @@ h6 {
   }
 }
 @media (any-hover:hover) {
+  .footer__link:hover {
+    text-decoration: underline
+  }
   .second-screen__button:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05)
